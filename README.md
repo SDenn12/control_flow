@@ -1,61 +1,40 @@
-# Data Collections
-## Lists, Tuples, Dictionaries
-
-### What are lists?
-- correct syntax []
-- lists are mutable
-- indexing applies
 ```python
-shopping_list = ["bat", "bread", "milk"]
-print(shopping_list[0])
-print(len(shopping_list))
-print(type(shopping_list))
+# if, elif, else
 
-# how to add to a list
-shopping_list.append("oreos")  # append() adds item to the end of the list
+
+# learn loops (for/while)
+# dont have to repeat yourself
+# help with iteration
+
+shopping_list = ["fruits", "milk", "bread", "cream"]
 print(shopping_list)
+for item in shopping_list:
+    print(item)
+    if item == "bread":
+        break
 
-# how to delete an item from a shopping list
-shopping_list.remove("milk")
-print(shopping_list)
+dictionary = {
+    'name': 'Sam',
+    'age': 21,
+    'salary': 10,
+    'address': 'AA11AA',
+    'spir_ani': 'panda',
+    'fav_col': 'red'
+}
 
-# how to replace item in shopping list
-shopping_list[0] = "milk"
+for key in dictionary.keys():
+    print(key)
 
-# slice list
-mixed_list = [1, 2, 3, "one", "two", "three"]
-print(mixed_list[1:3])  # outcome would be [2, 3] [start point (inclusive): end point (exclusive): step size]
-# Tuples
-# Why do we need tuple?
-# Lists are mutable and tuples are immutable
-# syntax for tuple ()
-# Use cases include DOB/place of birth
- essential = ("city", "DOB", "place of birth")
- print(essential)
- print(type(essential))
- print(essential[1])
+for value in dictionary.values():
+    print(value)
 
-# Dictionary
-# Why do we need dictionary?
-# Include key value pairs
-# Dictionary can have al types of data collections
-# syntax for dictionaries {key:value}
+for key in dictionary.keys():
+    print(f"{key} - {dictionary[key]}")
 
-devops_student_1 = {"name": "sam",
-                    "age": 21,
-                    "stream": "tech",
-                    "completed_lessons": 3,
-                    "completed_lessons_names": ["strings", "lists", "operations"]
-                    }
-print(devops_student_1.keys())
-print(devops_student_1.values())
-print(devops_student_1["completed_lessons_names"][1])
-# find out how to delete an item from dictionary and delete operations
-# find out how to change completed lessons from 3 to 2
-del(devops_student_1["stream"])  # use the del command to delete an item from a dictionary
-devops_student_1["completed_lessons"] = 2  # you can reassign using the index
+# print("\n")
+# i = 0
+# while i < len(shopping_list):
+#     print(shopping_list[i])
+#     i += 1
 
-# you can reassign embedded lists
-devops_student_1["completed_lessons_names"][1] = "sparta skills"  
-print(devops_student_1)
 ```
