@@ -27,10 +27,10 @@ class Calculator:
 
 
 # prints the functions
-print(Calculator.add(1, 2))
-print(Calculator.subtract(1, 2))
-print(Calculator.multiply(1, 2))
-print(Calculator.divide(1, 2))
+print(Calculator.add(1, 2))  # returns 3
+print(Calculator.subtract(1, 2))  # returns -1
+print(Calculator.multiply(1, 2))  # returns 2
+print(Calculator.divide(1, 2))  # returns 0.5
 ```
 
 ## Conditions
