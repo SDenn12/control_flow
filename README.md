@@ -1,6 +1,6 @@
 ## Functions
 ```
-# create a function that takes two arguments
+# create a class which contains functions
 
 
 class Calculator:
